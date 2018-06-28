@@ -1,0 +1,29 @@
+初始化版本：
+1.mkdir learngit
+2.cd learngit
+3.pwd
+4.git init
+5.git add readme.txt
+6.git commit -m "wrote readme file"
+
+版本回退：
+1.git log # show history version
+or git log --pretty=oneline
+2.git reset --hard HEAD^
+3.git reflog #　history operation log
+
+工作区和暂存区(working directory/Repository)
+1.git status #check status
+2.git diff HEAD --file # check diff between head and latest
+3.git checkout -- file #undo change
+4.git reset HEAD <file> #undo change when file in the stage
+
+删除文件：
+1.rm file -> git rm file -> git commit 
+2.git checkout -- file
+
+添加远程仓库
+1.git remote add origin xxx
+2.git push -u origin master # -u used at first time push
+2.1 git push origin master
+3.git clone xxxx
